@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BidKing Web Prototype</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">BidKing Web Prototype</p>
+          <h1>盲盒竞拍原型</h1>
+        </div>
+        <div class="topbar-stats">
+          <div class="stat-card">
+            <span>资金</span>
+            <strong id="moneyValue">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>仓库藏品</span>
+            <strong id="warehouseCount">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>道具库存</span>
+            <strong id="toolCount">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <nav class="main-nav" id="mainNav">
+        <button data-view="home" class="nav-btn is-active">大厅</button>
+        <button data-view="auction-setup" class="nav-btn">竞拍</button>
+        <button data-view="shop" class="nav-btn">商店</button>
+        <button data-view="warehouse" class="nav-btn">仓库</button>
+        <button data-view="docs" class="nav-btn">资料</button>
+      </nav>
+
+      <main class="main-grid">
+        <section id="homeView" class="view-section is-active"></section>
+        <section id="auctionSetupView" class="view-section"></section>
+        <section id="auctionView" class="view-section"></section>
+        <section id="settlementView" class="view-section"></section>
+        <section id="shopView" class="view-section"></section>
+        <section id="warehouseView" class="view-section"></section>
+        <section id="docsView" class="view-section"></section>
+      </main>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
