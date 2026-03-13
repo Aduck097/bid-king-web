@@ -889,3 +889,25 @@ body,
   font-size: 10px;
   color: #000;
 }
+
+.warehouse-actions {
+  margin-top: 14px;
+}
+
+.quality-checkboxes {
+  gap: 10px;
+}
+
+.quality-checkboxes label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(159, 60, 32, 0.12);
+  color: #000;
+}
+
+.quality-checkboxes input {
+  margin: 0;
+}
